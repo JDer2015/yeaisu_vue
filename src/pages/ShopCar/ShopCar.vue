@@ -15,7 +15,7 @@
       </div>
       <div class="shopCar_content_login">
         <span>去添加点什么吧</span>
-        <p>登录</p>
+        <p @click="$router.push('/login')">登录</p>
       </div>
     </div>
   </div>
