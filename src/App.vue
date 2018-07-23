@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <Home/>
-    <Footer/>
+      <router-view/>
+      <Footer/>
   </div>
 </template>
 
@@ -12,9 +12,8 @@ import Profile from './pages/Profile/Profile.vue'
 import ShopCar from './pages/ShopCar/ShopCar.vue'
 import Category from './pages/Category/Category.vue'
 import ShiWu from './pages/ShiWu/ShiWu.vue'
-import Cover from './components/Cover/Cover.vue'
+import Cover from './pages/Cover/Cover.vue'
 import Footer from './components/Footer/Footer.vue'
-
 export default {
   components: {
     Home,

@@ -4,7 +4,7 @@
     <img src="./cover/home2.jpg">
     <img src="./cover/home3.jpg">
     <div></div>
-    <a></a>
+    <a @click="$router.replace('/home')"></a>
   </div>
 </template>
 

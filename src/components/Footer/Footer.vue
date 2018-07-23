@@ -1,22 +1,22 @@
 <template>
-  <div class="footer">
-    <div class="on">
+  <div class="footer" v-show="$route.meta.isShow">
+    <div :class="{on:'/home' === $route.path }" @click="goTo('/home')">
       <i></i>
       <span>首页</span>
     </div>
-    <div>
+    <div :class="{on:'/shiWu' === $route.path }" @click="goTo('/shiWu')">
       <i></i>
       <span>识物</span>
     </div>
-    <div>
+    <div :class="{on:$route.path.includes('/category') }" @click="goTo('/category')">
       <i></i>
       <span>分类</span>
     </div>
-    <div>
+    <div :class="{on:'/shopCar' === $route.path }" @click="goTo('/shopCar')">
       <i></i>
       <span>购物车</span>
     </div>
-    <div>
+    <div :class="{on:'/profile' === $route.path }" @click="goTo('/profile')">
       <i></i>
       <span>个人</span>
     </div>
@@ -25,7 +25,13 @@
 
 <script>
 
-  export default {}
+  export default {
+    methods:{
+      goTo(path){
+        this.$router.push(path)
+      }
+    }
+  }
 </script>
 
 <style lang="less" scoped>
@@ -67,7 +73,7 @@
       }
       &:nth-of-type(3){
         i{
-          background-position: 0 -150px;
+          background-position: 0 -140px;
         }
       }
       &:nth-of-type(4){
@@ -97,7 +103,7 @@
       }
       &:nth-of-type(3){
         i{
-          background-position: 0 -100px;
+          background-position: 0 -90px;
         }
       }
       &:nth-of-type(4){
