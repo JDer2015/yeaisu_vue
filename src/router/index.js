@@ -1,12 +1,20 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import Home from '../pages/Home/Home.vue'
-import Profile from '../pages/Profile/Profile.vue'
-import ShiWu from '../pages/ShiWu/ShiWu.vue'
-import ShopCar from '../pages/ShopCar/ShopCar.vue'
-import Category from '../pages/Category/Category.vue'
-import CategroyInfo from '../pages/Category/CategoryInfo/CategoryInfo.vue'
+// import Home from '../pages/Home/Home.vue'
+// import Profile from '../pages/Profile/Profile.vue'
+// import ShiWu from '../pages/ShiWu/ShiWu.vue'
+// import ShopCar from '../pages/ShopCar/ShopCar.vue'
+// import Category from '../pages/Category/Category.vue'
+// import CategroyInfo from '../pages/Category/CategoryInfo/CategoryInfo.vue'
+
+
+const Home = () => import('../pages/Home/Home.vue')
+const ShiWu = () => import('../pages/ShiWu/ShiWu.vue')
+const Profile = () => import('../pages/Profile/Profile.vue')
+const ShopCar = () => import('../pages/ShopCar/ShopCar.vue')
+const Category = () => import('../pages/Category/Category.vue')
+const CategroyInfo = () => import('../pages/Category/CategoryInfo/CategoryInfo.vue')
 import Cover from '../pages/Cover/Cover.vue'
 
 Vue.use(VueRouter)
